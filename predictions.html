@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Climate Change and Water Resources</title>
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="predictions.html">Predictions</a></li>
+        <li><a href="resources.html">Resources</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div class="image-container">
+    <img src="w2.jpg" alt="Rising Temperatures Image">
+  </div>
+<main>
+    <section class="prediction-content">
+      <h2>Understanding Future Climate Changes</h2>
+      <p>Climate predictions are essential in anticipating and preparing for future changes. Analyzing historical data, current trends, and employing sophisticated models helps in forecasting potential climate shifts.</p>
+      <p>Key factors influencing climate predictions:</p>
+      <ul class="prediction-factors">
+        <li>Greenhouse Gas Emissions</li>
+        <li>Ocean Currents</li>
+        <li>Land Use Changes</li>
+        <li>Solar Activity</li>
+        <li>Atmospheric Conditions</li>
+      </ul>
+      <p>Accurate climate prediction enables proactive measures in adapting to changing environmental conditions, preserving ecosystems, and safeguarding water resources for future generations.</p>
+    </section>
+    <!-- Within the existing section.prediction-content -->
+<section class="prediction-content">
+    <h2>Predictions through Google Graphs
+    </h2>
+    <div class="prediction-subsection">
+      <h3>Projected Impact of Increased Greenhouse Gas Emissions</h3>
+      <p>According to recent climate models, continued rise in greenhouse gas emissions is anticipated to lead to...</p>
+      <p>Specifically, predictions suggest:</p>
+      <ul>
+        <li>Rising global temperatures by an average of X degrees Celsius over the next Y years.</li>
+        <li>Increased frequency and severity of extreme weather events, including storms, droughts, and heatwaves.</li>
+        <!-- Add more specific predictions based on your content -->
+      </ul>
+      <div id="predictionChart1"></div>
+      <div class="prediction-subsection">
+        <h3>Expected Changes in Precipitation Patterns</h3>
+        <p>Forecasts suggest alterations in rainfall...</p>
+        <!-- Google Chart Div -->
+        <div id="predictionChart2"></div>
+      </div>
+      <!-- Third Prediction Subsection -->
+  <div class="prediction-subsection">
+    <h3>Projected Sea Level Rise</h3>
+    <p>Studies indicate an anticipated increase...</p>
+    <!-- Google Chart Div -->
+    <div id="predictionChart3"></div>
+  </div>
+
+  <!-- Fourth Prediction Subsection -->
+  <div class="prediction-subsection">
+    <h3>Anticipated Crop Yield Changes</h3>
+    <p>Future climate shifts might impact agricultural...</p>
+    <!-- Google Chart Div -->
+    <div id="predictionChart4"></div>
+  </div>
+
+  <!-- Fifth Prediction Subsection -->
+  <div class="prediction-subsection">
+    <h3>Forecasted Changes in Glacier Mass</h3>
+    <p>Projections suggest alterations in glacier...</p>
+    <!-- Google Chart Div -->
+    <div id="predictionChart5"></div>
+  </div>
+    </div>
+  </section>
+  
+  </main>
+  <script type="text/javascript">
+    google.charts.load('current', { 'packages': ['corechart'] });
+    google.charts.setOnLoadCallback(drawCharts);
+  
+    function drawCharts() {
+      // Chart 1 - Projected Impact of Increased Greenhouse Gas Emissions
+      var data1 = google.visualization.arrayToDataTable([
+        ['Year', 'Temperature (°C)'],
+        ['2023', 1.5],
+        ['2024', 1.8],
+        ['2025', 2.1],
+        ['2026', 2.4],
+        // Add more data points as needed
+      ]);
+  
+      var options1 = {
+        title: 'Projected Temperature Increase',
+        curveType: 'function',
+        legend: { position: 'bottom' }
+      };
+  
+      var chart1 = new google.visualization.LineChart(document.getElementById('predictionChart1'));
+      chart1.draw(data1, options1);
+  
+      // Chart 2 - Expected Changes in Precipitation Patterns
+      var data2 = google.visualization.arrayToDataTable([
+        ['Month', 'Precipitation (mm)'],
+        ['January', 50],
+        ['February', 45],
+        ['March', 60],
+        ['April', 55],
+        // Add more data points as needed
+      ]);
+  
+      var options2 = {
+        title: 'Expected Monthly Precipitation',
+        legend: { position: 'bottom' }
+      };
+  
+      var chart2 = new google.visualization.ColumnChart(document.getElementById('predictionChart2'));
+      chart2.draw(data2, options2);
+    }
+  </script>
+  <script type="text/javascript">
+    google.charts.load('current', { 'packages': ['corechart'] });
+    google.charts.setOnLoadCallback(drawCharts);
+  
+    function drawCharts() {
+      // Chart 3 - Projected Sea Level Rise
+      var data3 = google.visualization.arrayToDataTable([
+        ['Year', 'Sea Level (cm)'],
+        ['2023', 10],
+        ['2024', 12],
+        ['2025', 15],
+        ['2026', 18],
+        // Add more data points as needed
+      ]);
+  
+      var options3 = {
+        title: 'Projected Sea Level Rise',
+        curveType: 'function',
+        legend: { position: 'bottom' }
+      };
+  
+      var chart3 = new google.visualization.LineChart(document.getElementById('predictionChart3'));
+      chart3.draw(data3, options3);
+  
+      // Chart 4 - Anticipated Crop Yield Changes
+      var data4 = google.visualization.arrayToDataTable([
+        ['Crop', 'Yield Change (%)'],
+        ['Wheat', 5],
+        ['Rice', 8],
+        ['Corn', 3],
+        ['Soybean', 7],
+        // Add more data points as needed
+      ]);
+  
+      var options4 = {
+        title: 'Anticipated Crop Yield Changes',
+        legend: { position: 'bottom' }
+      };
+  
+      var chart4 = new google.visualization.BarChart(document.getElementById('predictionChart4'));
+      chart4.draw(data4, options4);
+  
+      // Chart 5 - Forecasted Changes in Glacier Mass
+      var data5 = google.visualization.arrayToDataTable([
+        ['Year', 'Glacier Mass (tonnes)'],
+        ['2023', 500000],
+        ['2024', 480000],
+        ['2025', 450000],
+        ['2026', 420000],
+        // Add more data points as needed
+      ]);
+  
+      var options5 = {
+        title: 'Forecasted Changes in Glacier Mass',
+        legend: { position: 'bottom' }
+      };
+  
+      var chart5 = new google.visualization.ColumnChart(document.getElementById('predictionChart5'));
+      chart5.draw(data5, options5);
+    }
+  </script>
+  
+  
+
+  
+  <script src="script.js"></script>
+</body>
+</html>
+  

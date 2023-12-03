@@ -1,0 +1,458 @@
+/* Reset default browser styles */
+html, body {
+    margin: 0;
+    padding: 0;
+  }
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+  }
+/* Updated styles for navigation bar */
+header {
+    background-color:transparent;
+    color: white;
+    padding: 15px 0;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+  
+  nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+  }
+  
+  nav ul li a {
+    color: black;
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    font-weight: bolder;
+    transition: color 0.3s ease;
+  }
+  
+  nav ul li a:hover {
+    color:rgba(0, 0, 0, 0.519);
+    border:1px solid rgba(0, 0, 0, 0.519);
+  }
+  
+  /* Media queries for responsiveness */
+  @media only screen and (max-width: 768px) {
+    nav ul {
+      display: block;
+    }
+  
+    nav ul li {
+      display: block;
+      margin-bottom: 10px;
+    }
+  
+    nav ul li:last-child {
+      margin-bottom: 0;
+    }
+  
+    nav ul li a {
+      display: block;
+      padding: 10px;
+    }
+  }
+  
+  main {
+    padding: 20px;
+  }
+/* Styles for hero section */
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+    background-color: #f9f9f9;
+    color: #333;
+  }
+  
+  .hero h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  .hero p {
+    font-size: 18px;
+    margin-bottom: 30px;
+  }
+  
+  .cta-button {
+    display: inline-block;
+    padding: 12px 24px;
+    font-size: 16px;
+    text-decoration: none;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .cta-button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Styles for feature section */
+  .features {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px 20px;
+    background-color: #fff;
+    color: #333;
+  }
+  
+  .feature {
+    flex: 1;
+    text-align: center;
+    margin: 0 20px;
+  }
+  
+  .feature h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .feature p {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+  /* Existing CSS remains unchanged */
+
+/* Existing CSS remains unchanged */
+
+/* Updated styles for the features section */
+.features {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 50px 0;
+    background-color: #f9f9f9;
+    color: #333;
+  }
+  
+  .feature {
+    flex: 0 1 calc(33.333% - 40px);
+    text-align: left;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .feature:hover {
+    transform: translateY(-5px);
+  }
+  
+  .feature h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #007bff;
+  }
+  
+  .feature p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #555;
+  }
+  
+  /* Media Query for smaller screens */
+  @media screen and (max-width: 768px) {
+    .feature {
+      flex: 0 1 calc(50% - 40px);
+    }
+  
+    .feature h2 {
+      font-size: 22px;
+    }
+  
+    .feature p {
+      font-size: 14px;
+    }
+  }
+.conservation {
+    text-align: left;
+    margin: 40px 0;
+  }
+  
+  .conservation h2 {
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 2em;
+  }
+  
+  .conservation-info {
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+    font-size: 18px;
+    text-align: left;
+  }
+  
+  .conservation-info ul {
+    list-style-type: none;
+    padding-left: 20px;
+  }
+  /* Other styles remain unchanged */
+
+/* Style for the quiz section */
+.quiz {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+  }
+  
+  .quiz h3 {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .quiz p {
+    margin-bottom: 15px;
+  }
+  
+  /* Style for the quiz form */
+  #quiz-form {
+    text-align: left;
+  }
+  
+  /* Style for the quiz result */
+  #result {
+    font-weight: bold;
+    margin-top: 15px;
+  }
+  
+  
+  /* Responsive design */
+  @media screen and (max-width: 768px) {
+    .conservation-info {
+      font-size: 16px; /* Adjust font size for smaller screens */
+    }
+  }
+  .project-info {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .project-info h2 {
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 2.5em;
+  }
+  
+  .project-description {
+    line-height: 1.6;
+    font-size: 18px;
+  }
+  
+  .project-description ul {
+    list-style-type: disc;
+    padding-left: 20px;
+  }
+input[type="submit"] {
+    width: auto;
+    margin-top: 10px;
+    cursor: pointer;
+    background-color: #4CAF50; /* Add a background color */
+    color: white;
+    padding: 10px 20px; /* Add padding to the button */
+    border: none;
+    border-radius: 4px;
+    font-size: 1em; /* Adjust font size */
+    transition: background-color 0.3s ease; /* Add transition for smooth effect */
+  }
+  
+  #contact-form input[type="submit"]:hover {
+    background-color: #45a049; /* Change color on hover for interactivity */
+  }
+  
+/* Style for the visualization section */
+.visualization {
+    text-align: center;
+    margin: 40px 0;
+  }
+  
+  .visualization h2 {
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .chart-container {
+    width: 80%;
+    margin: auto;
+  }
+  
+    
+  /* Slider Styles */
+.slider-container {
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+    padding:40px;
+  }
+  
+  .slider {
+    display: flex;
+    transition: transform 0.5s ease; /* Transition for smooth image change */
+  }
+  
+  .slide {
+    flex: 0 0 100%;
+  }
+  
+  img {
+    width: 100%;
+    height: auto;
+  }
+  
+  section.prediction-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+  }
+  
+  section.prediction-content h2 {
+    margin-top: 0;
+  }
+  
+  ul.prediction-factors {
+    list-style-type: square;
+    margin-bottom: 20px;
+  }
+  
+  footer {
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+  /* Within your existing CSS file */
+.prediction-subsection {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .prediction-subsection h3 {
+    margin-top: 0;
+    color: #333;
+  }
+  
+  .prediction-subsection ul {
+    list-style-type: disc;
+    margin-left: 20px;
+  }
+/* Add styles for resource links and sections here */
+/* Example styles for resource links */
+.resource-section {
+    margin-bottom: 30px;
+  }
+  
+  .resource-section h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .resource-section ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .resource-section ul li {
+    margin-bottom: 5px;
+  }
+  
+  .resource-section ul li a {
+    text-decoration: none;
+    color: #007bff; /* Link color */
+  }
+/* CSS for contact form */
+.contact-form {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .contact-form h2 {
+    margin-top: 0;
+    font-size: 24px;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 100%;
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+  }
+  
+  button[type="submit"] {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .footer-container > div {
+    flex: 1 1 200px;
+    margin: 10px;
+  }
+  
+  .footer-logo img {
+    width: 100px; /* Adjust the width of your logo */
+  }
